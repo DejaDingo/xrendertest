@@ -17,7 +17,7 @@ It is also helpful to set this module as the home module.
 
 This is a testing module only.  There is no admin or any database tables.
 The XrendertestUtility class contains methods to create form elements,
-enclosing them in ElementWrapper objects (along with other controlling properties)
+enclosing them in XrendertestElementWrapper objects (along with other controlling properties)
 which are added to the form all at once just prior to rendering.
 You can add tests for any element rendered by the XoopsFormRenderers for various themes.
 

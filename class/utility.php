@@ -65,11 +65,11 @@ class XrendertestUtility
      * @param   XoopsForm{object} $element   the form elemenet
      * @param   boolean           $required  is element required?
      *
-     * @return  ElementWrapper            an element wrapper
+     * @return  XrendertestElementWrapper            an element wrapper
      */
     public function addElement($element, $required = false)
     {
-        $item = new ElementWrapper($element, $required);
+        $item = new XrendertestElementWrapper($element, $required);
         $this->_elements[] = $item;
         return $item;
     }
@@ -79,7 +79,7 @@ class XrendertestUtility
      *
      * @param boolean $recurse get elements recursively? (default = false)
      *
-     * @return ElementWrapper[] array of element wrappers
+     * @return XrendertestElementWrapper[] array of element wrappers
      */
     public function &getElements($recurse = false)
     {
@@ -778,9 +778,9 @@ class XrendertestUtility
 }
 
  /**
- * Class ElementWrapper
+ * Class XrendertestElementWrapper
  */
-class ElementWrapper
+class XrendertestElementWrapper
 {
     public $_name;
     public $_required;
